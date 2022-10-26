@@ -1,0 +1,24 @@
+{
+  "name": "minidzwigi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/konfigura/minidzwigi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/konfigura/minidzwigi/issues"
+  },
+  "homepage": "https://github.com/konfigura/minidzwigi#readme",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "normalize": "^0.3.1"
+  }
+}
