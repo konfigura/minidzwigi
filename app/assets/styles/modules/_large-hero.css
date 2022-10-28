@@ -1,7 +1,8 @@
 .large-hero {
 
   h1 {
-    color: red;
+    color: rgb(295, 255, 0);
+    font-size: 2.5rem;
   }
 
   display: grid;
@@ -17,7 +18,7 @@
     align-self: center;
     grid-column: 1;
     grid-row: 1;
-    padding-top: 60px;
+    padding-top: 100px;
     text-align: center;
   }
 }
