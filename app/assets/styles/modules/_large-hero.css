@@ -2,7 +2,7 @@
 
   h1 {
     color: rgb(295, 255, 0);
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   display: grid;
@@ -18,7 +18,7 @@
     align-self: center;
     grid-column: 1;
     grid-row: 1;
-    padding-top: 100px;
+    padding-top: 50px;
     text-align: center;
   }
 }

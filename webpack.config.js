@@ -20,7 +20,8 @@ module.exports = {
     },
     hot: 'only',
     liveReload: false,
-    port: 3000
+    port: 3000,
+    host: '0.0.0.0'
   },
   mode: 'development',
   module: {
