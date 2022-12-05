@@ -11,15 +11,15 @@ module.exports = {
   entry: './app/assets/scripts/App.js',
   output: {
     filename: 'bundled.js',
-    path: path.resolve(__dirname, '/app')
+    path: path.resolve(__dirname, 'app')
   },
   devServer: {
-    watchFiles: ('./app/**/*.html'),
+    watchFiles: ['./app/**/*.html'],
     static: {
-      directory: path.join(__dirname, 'app')
+      directory: path.join(__dirname, 'app'),
+      watch: false
     },
-    hot: 'only',
-    liveReload: false,
+    hot: true,
     port: 3000,
     host: '0.0.0.0'
   },

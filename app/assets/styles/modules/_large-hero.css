@@ -1,7 +1,8 @@
 .large-hero {
+  margin-top: 100px;
 
   h1 {
-    color: rgb(295, 255, 0);
+    color: black;
     font-size: 2rem;
   }
 
