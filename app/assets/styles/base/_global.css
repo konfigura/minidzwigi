@@ -1,7 +1,10 @@
 body {
-  /* Uzupełnić typografię! */
-  font-family: sans-serif;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   color: #333;
+}
+
+a {
+  text-decoration: none;
 }
 
 img {
