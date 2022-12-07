@@ -3,18 +3,18 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, .3);
 }
 
 .contact-bar {
   width: 100%;
-  height: auto;
   display: flex;
   justify-content: space-between;
   background-color: $lightGrey;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 700;
   color: $darkGrey;
-  padding: 12px 10px;
+  padding: 10px 20px;
   align-items: center;
 
   a {
@@ -24,11 +24,12 @@ header {
 
 .menu-bar {
   background-color: $pureWhite;
-  padding: .5rem;
+  padding: 8px 20px;
 
   &__logo {
     display: block;
-    width: 15rem;
+    height: 2rem;
+    width: auto;
   }
 
   nav {

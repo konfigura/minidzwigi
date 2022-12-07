@@ -1,0 +1,7 @@
+.btn--orange {
+  color: $pureWhite;
+  background-color: $mainOrange;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-weight: 500;
+}
