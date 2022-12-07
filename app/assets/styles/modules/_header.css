@@ -4,7 +4,6 @@ header {
   left: 0;
   z-index: 100;
   width: 100%;
-  box-shadow: 0 0px 20px rgba(0, 0, 0, .3);
 }
 
 .contact-bar {
@@ -12,6 +11,9 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: $lightGrey;
+  background-image: url('../../../assets/images/wall-pattern.png');
+  background-repeat: repeat-y;
+  background-size: 1200px;
   font-size: 0.875rem;
   font-weight: 700;
   color: $darkGrey;
@@ -26,6 +28,7 @@ header {
 .menu-bar {
   background-color: $pureWhite;
   padding: 12px 20px;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, .3);
 
   &__logo {
     display: block;
