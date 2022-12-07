@@ -1,4 +1,19 @@
 .tools-section {
   background-color: $blackGrey;
   color: $lightGrey;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 60px;
+}
+.section__heading-2 {
+  max-width: 335px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section__heading-3 {
+  margin: 0;
+  color: $mainOrange;
+  font-size: 0.875rem;
 }
