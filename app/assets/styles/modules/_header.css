@@ -8,7 +8,8 @@ header {
 
 .contact-bar {
   width: 100%;
-  display: flex;
+  /* display: flex; */
+  display: none;
   justify-content: space-between;
   background-color: $lightGrey;
   background-image: url('../../../assets/images/wall-pattern.png');
@@ -34,6 +35,11 @@ header {
     display: block;
     height: 2rem;
     width: auto;
+
+    
+    @mixin min425px {
+      height: 2.6rem;
+    }
   }
 
   nav {
