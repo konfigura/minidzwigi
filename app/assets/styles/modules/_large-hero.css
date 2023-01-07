@@ -1,17 +1,24 @@
 .large-hero {
+  display: flex;
+  flex-direction: column;
   padding-top: 70px;
   padding-bottom: 50px;
   background-color: rgb(231, 231, 227);
   background-image: linear-gradient(to top, rgba(44, 44, 44, 1 ), rgba(44, 44, 44, 0)), url('../../../assets/images/Asfalt.jpg'), url('../../../assets/images/wall-pattern.png');
-  background-repeat: no-repeat, no-repeat, repeat-y;
-  background-size: 400px 100px, 500px 180px, 1200px;
+  background-repeat: no-repeat, repeat-x, repeat-y;
+  background-size: 100% 100px, 500px 180px, 100%;
   background-position: bottom, bottom, top;
 
+  @mixin min1024px {
+    padding-top: 120px;
+    flex-direction: row;
+  }
 
-  h1 {
+  &__main-header {
     color: $darkGrey;
     font-size: 2rem;
     margin: 0;
+    max-width: 335px;
   }
 
   &__text-content {
@@ -19,34 +26,53 @@
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
-  }
-
-  &__image-container {
-    position: relative;
-    z-index: 1;
-  }
-
-  &__image {
-    width: 335px;
     margin-left: auto;
     margin-right: auto;
-    display: block;
 
-    &--shadow {
-      width: 335px;
-      height: 220px;
-      position: absolute;
-      top: 0;
-      left: 20px;
-      z-index: -1;
-      background-image: url('../../assets/images/large-hero--shadow.png');
-      background-size: contain;
-      mix-blend-mode: multiply;
+    @mixin min425px {
+      max-width: 400px;
+    }
+
+    @mixin min1024px {
+      flex-basis: 40%;
+      padding-left: 80px;
     }
   }
 
-  &__sub-text {
-    margin-bottom: 30px;
+  &__image-container {
+    width: calc(100% - 40px);
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+    border: 2px solid red;
+
+    @mixin min425px {
+      max-width: 400px;
+    }
+ 
+    @mixin min1024px {
+      max-width: 50%;
+      height: fit-content;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    display: block;
+
+    &--shadow {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: -1;
+      bottom: 0;
+      background-image: url('../../assets/images/large-hero--shadow.png');
+      background-repeat: no-repeat;
+      background-size:contain;
+      mix-blend-mode: multiply;
+    }
   }
 }
 
