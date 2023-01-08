@@ -10,7 +10,9 @@
   background-position: bottom, bottom, top;
 
   @mixin min1024px {
+    height: 450px;
     padding-top: 120px;
+    padding-bottom: 40px;
     flex-direction: row;
   }
 
@@ -22,21 +24,19 @@
   }
 
   &__text-content {
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
     margin-left: auto;
     margin-right: auto;
 
-    @mixin min425px {
-      max-width: 400px;
-    }
-
     @mixin min1024px {
-      flex-basis: 40%;
-      padding-left: 80px;
+      flex-basis: 50%;
+      margin: 0;
+      padding-left: 50px;
     }
+  }
+
+  &__sub-text {
+    margin-bottom: 40px;
   }
 
   &__image-container {
@@ -46,15 +46,12 @@
     margin-right: auto;
     position: relative;
     z-index: 1;
-    border: 2px solid red;
-
-    @mixin min425px {
-      max-width: 400px;
-    }
+    /* border: 2px solid red; */
  
     @mixin min1024px {
-      max-width: 50%;
+      flex-basis: 40%;
       height: fit-content;
+      align-self: flex-end;
     }
   }
 

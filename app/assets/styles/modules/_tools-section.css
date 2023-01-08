@@ -1,0 +1,20 @@
+.tools-section {
+  background-color: $blackGrey;
+  color: $lightGrey;
+  text-align: center;
+  padding: 30px 20px 60px 20px;
+
+  &__heading-2 {
+    max-width: 335px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.625rem;
+  }
+
+  &__heading-3 {
+    margin: 0;
+    color: $mainOrange;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+}
