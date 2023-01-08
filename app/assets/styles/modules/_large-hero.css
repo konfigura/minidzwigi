@@ -4,7 +4,7 @@
   padding-top: 70px;
   padding-bottom: 50px;
   background-color: rgb(231, 231, 227);
-  background-image: linear-gradient(to top, rgba(44, 44, 44, 1 ), rgba(44, 44, 44, 0)), url('../../../assets/images/Asfalt.jpg'), url('../../../assets/images/wall-pattern.png');
+  background-image: linear-gradient(to top, rgba(44, 44, 44, 1 ), rgba(44, 44, 44, 0)), url('../../../assets/images/Asfalt.jpg'), repeating-linear-gradient(to right, #ecece8, #f0efee 1.6rem, #eaeae9 2.05rem, #dddddc 2.1rem);
   background-repeat: no-repeat, repeat-x, repeat-y;
   background-size: 100% 100px, 500px 180px, 100%;
   background-position: bottom, bottom, top;
@@ -27,6 +27,8 @@
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
+    position: sticky;
+    top: 70px;
 
     @mixin min1024px {
       flex-basis: 50%;
@@ -45,7 +47,7 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    z-index: 1;
+    z-index: 10;
     /* border: 2px solid red; */
  
     @mixin min1024px {

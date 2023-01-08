@@ -1,8 +1,14 @@
 .tools-section {
-  background-color: $blackGrey;
+  width: 100%;
+  background-color: $darkGrey;
+  background: url("../../../assets/images/noise.svg"), linear-gradient(rgb(52, 52, 53), rgb(37, 37, 37));
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
   color: $lightGrey;
   text-align: center;
-  padding: 30px 20px 60px 20px;
+  padding-top: 30px;
+  padding-bottom: 60px;
 
   &__heading-2 {
     max-width: 335px;
@@ -17,4 +23,67 @@
     font-size: 1rem;
     text-transform: uppercase;
   }
+
+  &__text-container {
+    width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+#tools-section__carousel-container {
+  display: flex;
+  gap: 35px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 30px;
+  overflow-x: scroll;
+  width: 100%;
+  scroll-snap-type: x mandatory;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.tools-section__carousel-item {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  border: .5px solid $secondaryOrange;
+  border-radius: 10px;
+  scroll-snap-align: center;
+  flex-shrink: 0;
+  width: 280px;
+  overflow: visible;
+  background-color: $blackGrey;
+  box-shadow: 0px 5px 30px rgba(0,0,0, 0.5), inset 0px 0px 5px rgba(255, 172, 75, .25);
+
+  & > h4 {
+    color: $mainOrange;
+    font-size: 1.625rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  & > img {
+    width: 200px;
+    margin-top: -60px;
+  }
+
+  & > p {
+    font-size: 0.875rem;
+    color: $secondaryOrange;
+    max-width: 230px;
+  }
+}
+
+.svg-test {
+  width: 300px;
+  height: 300px;
+  border: 1px solid $mainOrange;
+  margin: 20px;
+  background-image: url(../../../assets/images/noise.svg);
 }
