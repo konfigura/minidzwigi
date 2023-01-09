@@ -1,5 +1,3 @@
-
-
 @define-mixin min425px {
   @media (min-width: 425px) {
     @mixin-content;

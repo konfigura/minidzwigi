@@ -1,0 +1,10 @@
+.services-section {
+  background-color: $darkGrey;
+  background: url("../../../assets/images/noise.svg"), linear-gradient(0deg, rgb(52, 52, 53), rgb(37, 37, 37));
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  color: $lightGrey;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}

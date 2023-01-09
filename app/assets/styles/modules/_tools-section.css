@@ -1,5 +1,4 @@
 .tools-section {
-  width: 100%;
   background-color: $darkGrey;
   background: url("../../../assets/images/noise.svg"), linear-gradient(rgb(52, 52, 53), rgb(37, 37, 37));
   background-size: cover;
@@ -10,13 +9,6 @@
   padding-top: 30px;
   padding-bottom: 60px;
 
-  &__heading-2 {
-    max-width: 335px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 1.625rem;
-  }
-
   &__heading-3 {
     margin: 0;
     color: $mainOrange;
@@ -25,7 +17,7 @@
   }
 
   &__text-container {
-    width: calc(100% - 40px);
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -40,7 +32,8 @@
   padding-bottom: 50px;
   margin-top: 30px;
   overflow-x: scroll;
-  width: 100%;
+  width: 100vw;
+  margin-left: -20px;
   scroll-snap-type: x mandatory;
 
   &::-webkit-scrollbar {
