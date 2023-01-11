@@ -11,7 +11,6 @@
 *.sass-cache
 node_modules/
 .tmp/
-*.psd
 
 # OS or Editor folders
 .DS_Store
